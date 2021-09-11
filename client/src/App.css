@@ -1,0 +1,247 @@
+.icon-required {
+	color: red;
+	width: 10px;
+	height: 10px;
+	transform: translateX(5px) translateY(-5px);
+}
+
+.display-end {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+
+.display-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.landing {
+	position: relative;
+	background: url("./assets/landing.jpg") no-repeat center center/cover;
+	height: 100vh;
+}
+
+.dark-overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+}
+
+.landing-inner {
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.landing-inner form {
+	width: 30%;
+}
+
+.landing-inner h1,
+.landing-inner h4,
+.landing-inner p {
+	color: white;
+}
+
+.spinner-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+/* Post button */
+.post-button {
+	padding-top: 0;
+	background: transparent;
+	border: none;
+}
+
+.post-button:hover {
+	background: transparent;
+}
+
+a.post-button.btn:focus,
+a.post-button.btn:active {
+	outline: none;
+	background: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+button.post-button.btn:focus,
+button.post-button.btn:active {
+	outline: none;
+	background: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+/* Floating add button */
+.btn-floating {
+	position: fixed;
+	right: 3rem;
+	bottom: 3rem;
+	background: transparent;
+	border: none;
+}
+
+.btn-floating:hover {
+	background: transparent;
+}
+
+.btn-floating:focus,
+.btn-floating:active {
+	outline: none;
+	background: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+/* Add new post tooltip */
+.tooltip {
+	background: transparent;
+}
+
+.tooltip .arrow::before {
+	border-left-color: #78c2ad;
+}
+
+.tooltip-inner {
+	background: #78c2ad;
+}
+
+/* Post border thicker */
+.border-success,
+.border-warning,
+.border-danger {
+	border-width: 2px;
+}
+
+/* Post title */
+.post-title {
+	margin-bottom: 0.5rem;
+}
+
+.ml-1 {
+	margin-left: 1rem;
+}
+
+.ml-2 {
+	margin-left: 2rem;
+}
+
+.mr-1 {
+	margin-right: 1rem;
+}
+
+.mr-2 {
+	margin-right: 2rem;
+}
+
+form div[role="alert"] {
+	padding: 0.5rem;
+}
+
+.form-group {
+	margin: 1rem 0;
+}
+
+.navbar {
+	padding: 1rem;
+}
+
+.navbar-collapse {
+	justify-content: space-between;
+}
+
+.navbar-nav a {
+	margin: auto 0;
+}
+
+.badge-success {
+	background-color: #d4edda;
+	border-color: #c3e6cb;
+	color: #155724;
+}
+
+.badge-danger {
+	color: #721c24;
+	background-color: #f8d7da;
+	border-color: #f5c6cb;
+}
+
+.badge-warning {
+	color: #856404;
+	background-color: #fff3cd;
+	border-color: #ffeeba;
+}
+
+.card-body {
+	background-color: #00000060;
+	border-radius: 0 0 8px 8px;
+}
+
+.card-body-course {
+	border-radius: 8px;
+}
+
+.modal-body {
+	padding: 1rem 2rem;
+}
+
+.modal button.close {
+	background-color: #ffffff00;
+	border: 0;
+	color: #fff;
+}
+
+.modal button.close span {
+	font-size: 1.5rem;
+}
+
+.modal .close span:last-child {
+	display: none;
+}
+
+.dropdown .btn-primary {
+	width: 100%;
+	color: #fff;
+	background-color: #ffffff00;
+	border-color: #8b8b8b;
+}
+
+.btn-primary::after {
+	border: 0;
+	display: none;
+}
+
+.show.dropdown > .btn-primary {
+	color: #fff;
+	background-color: #ffffff00;
+	border-color: #8b8b8b;
+}
+
+.dropdown.show > .btn-primary.dropdown-toggle:focus {
+	box-shadow: 0 0 2px 0.25rem #e8e8e859;
+}
+
+.dropdown > .btn-primary:focus {
+	box-shadow: 0 0 2px 0.25rem #e8e8e859;
+}
+
+.dropdown-menu {
+	width: 100%;
+}
+
+.dropdown-item:focus {
+	background-color: #ffffff00;
+	border-color: #8b8b8b;
+}

@@ -1,0 +1,64 @@
+//--------------------------------------- USER ---------------------------------------
+// Register user
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "dodat",
+    "password": "123"
+}
+
+// Login
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "dole",
+    "password": "1234"
+}
+
+// DELETE
+###
+DELETE  http://localhost:5000/api/auth/61323e8a48b9f720b416a562
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTMyM2U4YTQ4YjlmNzIwYjQxNmE1NjIiLCJpYXQiOjE2MzA2ODI3NjJ9.fBM3MJt39nA_N1kb1oVzLJW4HETr0jo2KpRa01wOpQw
+
+//--------------------------------------- POST ---------------------------------------
+// Get post by user token
+###
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTJlM2I0NWRkNzE3ODM1ZjBhYjE4ZDIiLCJpYXQiOjE2MzA3MjgwOTF9.GXeg1C8WlEbk_fUatcr0bbdc5aJCvNAcuBmqw5p2Nk0
+
+
+// Register post
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTJlM2I0NWRkNzE3ODM1ZjBhYjE4ZDIiLCJpYXQiOjE2MzA3MjQwNzl9.qvQrT01UWC6tg9VClwJtQz2d7PjCym-d2wS1MfdetLo
+
+{
+    "title": "Course IT",
+    "description" : "Learn C-Sharp",
+    "url": "w3school.com",
+    "status" : "LEARNED"
+}
+
+
+// Update post
+###
+PUT http://localhost:5000/api/posts/612af5e4d61f15026bf8ffd4
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTJhZWQ2YjBmOWFlOTc1ZTdjNzk4MTIiLCJpYXQiOjE2MzAyMDMyNDN9.dYgcnNdfJT3Q0h3p7rpB1NJU_63qB9c5M8gkXGcIumM
+
+{
+    "title" : "Go school Update",
+    "desscription" : "Update",
+    "url": "https://update.com",
+    "status": "LEARNING"
+}
+
+
+// Delete post
+###
+DELETE http://localhost:5000/api/posts/612af5e4d61f15026bf8ffd4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTJhZWQ2YjBmOWFlOTc1ZTdjNzk4MTIiLCJpYXQiOjE2MzAyMDMyNDN9.dYgcnNdfJT3Q0h3p7rpB1NJU_63qB9c5M8gkXGcIumM
