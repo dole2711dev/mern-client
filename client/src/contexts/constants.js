@@ -1,7 +1,7 @@
 export const apiUrl =
 	process.env.NODE_ENV !== "production"
 		? "http://localhost:5000/api"
-		: "somedeployUrl";
+		: "https://vast-plains-05545.herokuapp.com/api";
 
 export const LOCAL_STORAGE_TOKEN_ACCESS = "token";
 export const POST_LOADED_SUCCESS = "POSTS_LOADED_SUCCESS";
